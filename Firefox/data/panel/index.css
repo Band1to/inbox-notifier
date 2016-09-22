@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfb;
+  align-items: center;
+  padding: 5px 0;
+  font-size: 14px;
+  margin: 0;
+  box-sizing: border-box;
+}
+body>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body>div:first-child {
+  flex: 1;
+}
+label {
+  cursor: pointer;
+  -moz-user-select: none;
+}
+label:before {
+  font-family: 'fontello';
+  content: '\f096';
+  letter-spacing: 2px;
+}
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked + label:before {
+  content: '\e807';
+}
+span {
+  border: solid 1px #b1afc0;
+  color: #55545c;
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+span:hover {
+  border-color: #55545c;
+}
+span:active {
+  border-color: blue;
+}
+[class^="icon-"]:before {
+  line-height: 25px;
+}
+
+span[data-cmd="pin"][data-value="true"]:before {
+  content: '\e804';
+}

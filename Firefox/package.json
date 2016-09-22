@@ -1,0 +1,57 @@
+{
+  "title": "Inbox™ Notifier",
+  "name": "iinotifier",
+  "version": "0.1.0",
+  "description": "Mail notifier and manager for inbox.google.com",
+  "main": "common.js",
+  "author": "Morni Colhkher",
+  "id": "7unNbqpl9ouU7y6ui@jetpack",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MPL 2.0",
+  "keywords": [
+    "jetpack"
+  ],
+  "permissions": {
+    "private-browsing": true,
+    "multiprocess": true,
+    "unsafe-content-script": true
+  },
+  "preferences": [
+    {
+      "description": "URL used for displaying content of the panel as well as the badge counter",
+      "type": "string",
+      "name": "inbox",
+      "value": "https://inbox.google.com/u/0/",
+      "title": "inbox.google.com URL:"
+    },
+    {
+      "description": "Minimum time interval between consequent unread checks (in seconds)",
+      "type": "integer",
+      "name": "period",
+      "value": 10,
+      "title": "Minimum interval:"
+    },
+    {
+      "description": "Width of panel in pixels",
+      "type": "integer",
+      "name": "width",
+      "value": 500,
+      "title": "Panel width:"
+    },
+    {
+      "description": "Height of panel in pixels",
+      "type": "integer",
+      "name": "height",
+      "value": 400,
+      "title": "Panel height:"
+    },
+    {
+      "title": "Display FAQs page on upgrades",
+      "type": "bool",
+      "name": "welcome",
+      "value": true
+    }
+  ]
+}
